@@ -3,8 +3,8 @@ package com.springExample.rentACar.webApi.controllers;
 import com.springExample.rentACar.business.abstracts.BrandService;
 import com.springExample.rentACar.business.request.CreateBrandRequest;
 import com.springExample.rentACar.business.responses.GetAllBrandsResponse;
-import com.springExample.rentACar.entities.concretes.Brand;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,12 +19,13 @@ public class BrandsController {
         this.brandService = brandService;
     }
 
-    @GetMapping("/getall")
+    @GetMapping()
     public List<GetAllBrandsResponse> getAll() {
         return brandService.getAll();
     }
 
-    @PostMapping ("/add")
+    @PostMapping()
+    @ResponseStatus(code = HttpStatus.CREATED)
     public void add(@RequestBody() CreateBrandRequest createBrandRequest) {
         this.brandService.add(createBrandRequest);
     }
