@@ -21,3 +21,13 @@ Msrc/main/java/com/springExample/rentACar/business/abstracts/BrandService.java,
 Wsrc/main/java/com/springExample/rentACar/core/utilities/mappers/ModelMapperManager.java,a\1\a15f4b5cdb65ac5658b9194da1a2a7786d1617a9
 Ç
 Rsrc/main/java/com/springExample/rentACar/dataAccess/abstracts/BrandRepository.java,9\8\98e5424a690613f67da27cf671d0c5b93f8567e5
+}
+Msrc/main/java/com/springExample/rentACar/business/concretes/BrandManager.java,4\1\414df9ad67950b5b0805e409a972d27e88b28fe3
+Å
+Qsrc/main/java/com/springExample/rentACar/webApi/controllers/BrandsController.java,6\5\6586bc7f21ae78aaffac1d670d5c7b34edc59e8e
+q
+Asrc/main/java/com/springExample/rentACar/RentACarApplication.java,a\b\ab04ce504c8cde9b691bcae723087fe5d25d383d
+v
+Fsrc/main/java/com/springExample/rentACar/entities/concretes/Model.java,0\e\0eef5523943eec45300724db93039e10b49f421a
+v
+Fsrc/main/java/com/springExample/rentACar/entities/concretes/Brand.java,6\7\676523963d2b9e3cac7c1a60258e08390b0c8942
