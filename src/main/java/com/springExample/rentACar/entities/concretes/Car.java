@@ -6,28 +6,32 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
-@Table(name = "models")
+@Table(name = "cars")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Model {
-
+public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "plate")
+    private String plate;
+
+    @Column(name = "dailyPrice")
+    private double dailyPrice;
+
+    @Column(name = "modelYear")
+    private int modelYear;
+
+    @Column(name = "state")
+    private int state; //1-Avaible 2-Rented 3-Maintenance
 
     @ManyToOne
-    @JoinColumn(name = "brand_id")
-    private Brand brand;
-
-    @OneToMany(mappedBy = "model")
-    private List<Car> cars;
+    @JoinColumn(name = "model_id")
+    private Model model;
 }

@@ -20,7 +20,7 @@ public class Brand {
     private String name;
 
     @OneToMany(mappedBy = "brand")
-    List<Model> models;
+    private List<Model> models;
 
 
 }
