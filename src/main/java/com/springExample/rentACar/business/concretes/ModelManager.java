@@ -41,4 +41,9 @@ public class ModelManager implements ModelService {
         Model model = this.modelMapperService.forRequest().map(createModelRequest, Model.class);
         this.modelRepository.save(model);
     }
+
+    @Override
+    public void delete(int id) {
+        this.modelRepository.deleteById(id);
+    }
 }

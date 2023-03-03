@@ -32,4 +32,9 @@ public class ModelsController {
     public void add(@RequestBody() @Valid() CreateModelRequest createModelRequest) {
         this.modelService.add(createModelRequest);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id) {
+        this.modelService.delete(id);
+    }
 }
