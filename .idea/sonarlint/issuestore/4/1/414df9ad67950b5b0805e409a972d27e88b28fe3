@@ -1,5 +1,0 @@
-
-m
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(»‹ì®úÿÿÿÿ
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ñªÌ›ê0

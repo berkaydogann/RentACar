@@ -3,7 +3,7 @@ package com.springExample.rentACar.core.utilities.mappers;
 import org.modelmapper.ModelMapper;
 
 public interface ModelMapperService {
-    ModelMapper forRespone();
+    ModelMapper forResponse();
 
     ModelMapper forRequest();
 }
