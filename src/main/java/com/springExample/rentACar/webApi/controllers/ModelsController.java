@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -22,7 +23,7 @@ public class ModelsController {
 
     @PostMapping()
     @ResponseStatus(code = HttpStatus.CREATED)
-    public void add(@RequestBody() CreateModelRequest createModelRequest) {
+    public void add(@RequestBody() @Valid() CreateModelRequest createModelRequest) {
         this.modelService.add(createModelRequest);
     }
 }
