@@ -3,6 +3,7 @@ package com.springExample.rentACar.business.concretes;
 import com.springExample.rentACar.business.abstracts.ModelService;
 import com.springExample.rentACar.business.request.CreateModelRequest;
 import com.springExample.rentACar.business.responses.GetAllModelsResponse;
+import com.springExample.rentACar.business.responses.GetByIdModelResponse;
 import com.springExample.rentACar.core.utilities.mappers.ModelMapperService;
 import com.springExample.rentACar.dataAccess.abstracts.ModelRepository;
 import com.springExample.rentACar.entities.concretes.Model;
@@ -25,6 +26,14 @@ public class ModelManager implements ModelService {
                 .map(model -> this.modelMapperService.forResponse()
                         .map(model, GetAllModelsResponse.class)).collect(Collectors.toList());
         return modelsResponses;
+    }
+
+    @Override
+    public GetByIdModelResponse getByIdModel(int id) {
+        Model model = this.modelRepository.findById(id).orElseThrow();
+        GetByIdModelResponse response = this.modelMapperService.forResponse()
+                .map(model, GetByIdModelResponse.class);
+        return response;
     }
 
     @Override

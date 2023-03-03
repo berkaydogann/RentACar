@@ -5,7 +5,5 @@
 mvnw.cmd,1\f\1f1763f358c257ea3515417352b82b0165647ad1
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-Ö
-Usrc/main/java/com/springExample/rentACar/business/responses/GetByIdBrandResponse.java,1\9\19a6f4797e14f2682d86b3a3b0e2fe3d46c05922
 Å
 Qsrc/main/java/com/springExample/rentACar/business/request/UpdateBrandRequest.java,e\4\e477302b5e11f9919bd3e0a9880e098b92f85fee
